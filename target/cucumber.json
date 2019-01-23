@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Remaining cards correctly updated after drawing",
+        "description": "",
+        "id": "drawing-from-deck-of-cards;remaining-cards-correctly-updated-after-drawing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8795470632,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "a new deck starts with shuffling of cards",
+            "match": {
+              "location": "GetPostStep.aNewDeckStartsWithShufflingOfCards()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2646994726,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Draw cards from the deck five times between 1 and 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 44
+                },
+                {
+                  "val": "5",
+                  "offset": 50
+                }
+              ],
+              "location": "GetPostStep.drawCardsFromTheDeckFiveTimesBetweenAnd(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12975878,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify the remaining cards in the deck is equal to 47",
+            "match": {
+              "arguments": [
+                {
+                  "val": "47",
+                  "offset": 51
+                }
+              ],
+              "location": "GetPostStep.verifyTheRemainingCardsInTheDeckIsEqualTo(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Drawing from Deck of cards",
+    "description": "",
+    "id": "drawing-from-deck-of-cards",
+    "keyword": "Feature",
+    "uri": "GetPost.feature"
+  }
+]
